@@ -64,6 +64,12 @@ int main()
             stageTwo = true;
 
         }
+        if((mainInterface.getScore() >= 560))
+        {
+            audioManager.stopMusic();
+            init = false;
+            menu = true;
+        }
 
         time.updateShoot();
         time.updateRandomShoot();
